@@ -25,6 +25,8 @@ class Friend(Person):
     def introduce (self):
            super().introduce()
            print(f"хобби друга {self.hobby}")
+
+
 class BestFriend(Friend):
     def __init__(self,name, birth_date, occupation, higher_education, hobby, shared_memory ):
           super().__init__(name,birth_date,occupation,higher_education,hobby, )
@@ -35,11 +37,22 @@ class BestFriend(Friend):
 
 person = Person("Азамат", "12.05.2000", "Ветеринар", "Да")
 
-classmate = Classmate("Бекзат", "20.03.2001", "Студент", "Нет", "Geeks 60-1")
 
-friend = Friend("Эрмек", "15.07.1999", "Программист", "Да", "играть в шахматы")
 
-bestFriend = BestFriend("Артур" ,"16.06.2000","МЧС","да","футбол", "Лучшие")
+print("\n Дочерный класс(Classmate):")
+classmate = Classmate("Бекзат", "20.03.2001",
+"Студент", "Нет", "Geeks 60-1")
+
+
+
+print("\n Дочерный класс(Friend):")
+friend = Friend("Эрмек", "15.07.1999",
+"Программист", "Да", "играть в шахматы")
+
+
+print("\n Доп задание - 2:")
+bestFriend = BestFriend("Артур" ,"16.06.2000",
+"МЧС","да","футбол", "Лучшие")
 
 
 # person.introduce ()
